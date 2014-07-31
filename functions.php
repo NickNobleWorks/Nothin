@@ -59,8 +59,23 @@ function nothin_setup{
   }
   add_action( 'wp_enqueue_scripts', 'nothin_enqueues' );
 
+  // ===============================================================
+  // EXTRA BITS AND BOBS
+  // ===============================================================
+
+  // Make custom post types searchable
+  function searchable_post_types( $query ) {
+   if ( $query->is_search ) { $query->set( 'post_type', array( 'site', 'plugin', 'theme', 'person' )); } 
+   return $query;
+  }
+  add_filter( 'the_search_query', 'searchable_post_types' );
+
+  // Show all errors, without having to go back to wp-config.php => COMMENT THIS OUT FOR PRODUCTION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  error_reporting(E_ALL);
+  ini_set('display_errors', '1');
 
 }
 endif; // nothin_setup
 add_action( 'after_setup_theme', 'nothin_setup' );
+
 ?>
