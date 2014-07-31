@@ -37,7 +37,10 @@ function nothin_setup{
   // REGISTER ALL THE THINGS
   // ===============================================================
 
-  register_nav_menu( 'primary', 'Primary Navigation' );
+  // Register dynamic menus
+  register_nav_menus( array(
+    'primary' => 'Primary Navigation' 
+  ));
 
   // Add a widget area for the footer
   register_sidebar(array(
