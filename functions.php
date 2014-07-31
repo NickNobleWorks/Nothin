@@ -1,5 +1,10 @@
 <?php
 
+// Show all errors, without having to go back to wp-config.php => COMMENT THIS OUT FOR PRODUCTION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+
+
 if ( ! function_exists( 'nothin_setup' ) ) :
 function nothin_setup{
 
@@ -74,10 +79,6 @@ function nothin_setup{
    return $query;
   }
   add_filter( 'the_search_query', 'searchable_post_types' );
-
-  // Show all errors, without having to go back to wp-config.php => COMMENT THIS OUT FOR PRODUCTION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  error_reporting(E_ALL);
-  ini_set('display_errors', '1');
 
 }
 endif; // nothin_setup
