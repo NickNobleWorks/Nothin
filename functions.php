@@ -7,9 +7,6 @@ function nothin_setup{
   // ADD THEME SUPPORTS
   // ===============================================================
 
-  // Add dynamic menu support
-  add_theme_support( 'menus' );
-
   // Add featured image support
   add_theme_support('post-thumbnails');
 
@@ -36,6 +33,8 @@ function nothin_setup{
   // ===============================================================
   // REGISTER ALL THE THINGS
   // ===============================================================
+
+  register_nav_menu( 'primary', 'Primary Navigation' );
 
   // Add a widget area for the footer
   register_sidebar(array(
