@@ -1,10 +1,11 @@
 <?php
 
+if ( ! function_exists( 'nothin_setup' ) ) :
 function nothin_setup{
 
-  // ========================
+  // ===============================================================
   // ADD THEME SUPPORTS
-  // ========================
+  // ===============================================================
 
   // Add dynamic menu support
   add_theme_support( 'menus' );
@@ -26,14 +27,15 @@ function nothin_setup{
       'chat'
     ) 
   );
+
   add_post_type_support( 'post', 'post-formats' );
   add_post_type_support( 'page', 'post-formats' );
   // and other custom post types if you have them
 
 
-  // ========================
+  // ===============================================================
   // REGISTER ALL THE THINGS
-  // ========================
+  // ===============================================================
 
   // Add a widget area for the footer
   register_sidebar(array(
@@ -48,5 +50,6 @@ function nothin_setup{
   ););
 
 }
-
+endif; // nothin_setup
+add_action( 'after_setup_theme', 'nothin_setup' );
 ?>
