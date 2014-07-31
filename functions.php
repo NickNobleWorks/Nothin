@@ -49,6 +49,17 @@ function nothin_setup{
     'after_title'   => '</h3>'
   ););
 
+  // ===============================================================
+  // ENQUEUE STYLES AND SCRIPTS
+  // ===============================================================
+
+  function nothin_enqueues() {
+    wp_enqueue_style( 'main-stylesheet', get_stylesheet_uri() );
+    wp_enqueue_script( 'main-scripts', get_stylesheet_directory_uri() . '/js/scripts.js', array( 'jquery' )); // Adds built in jQuery too!
+  }
+  add_action( 'wp_enqueue_scripts', 'nothin_enqueues' );
+
+
 }
 endif; // nothin_setup
 add_action( 'after_setup_theme', 'nothin_setup' );
