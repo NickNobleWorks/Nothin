@@ -7,6 +7,9 @@ function nothin_setup{
   // ADD THEME SUPPORTS
   // ===============================================================
 
+  // Add html5 tag support
+  add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
+
   // Add featured image support
   add_theme_support('post-thumbnails');
 
