@@ -9,6 +9,9 @@ function nothin_setup{
   // Add dynamic menu support
   add_theme_support( 'menus' );
 
+  // Add featured image support
+  add_theme_support('post-thumbnails');
+
   // Add post format support
   add_theme_support( 'post-formats', 
     array( 
@@ -25,7 +28,12 @@ function nothin_setup{
   );
   add_post_type_support( 'post', 'post-formats' );
   add_post_type_support( 'page', 'post-formats' );
+  // and other custom post types if you have them
 
+
+  // ========================
+  // REGISTER ALL THE THINGS
+  // ========================
 
   // Add a widget area for the footer
   register_sidebar(array(
