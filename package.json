@@ -1,0 +1,20 @@
+{
+  "name": "Nothin",
+  "version": "0.0.0",
+  "description": "A WordPress Starter Theme, make somethin from Nothin!",
+  "main": "index.php",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NickNobleWorks/Nothin.git"
+  },
+  "keywords": [
+    "WordPress",
+    "boilerplate"
+  ],
+  "author": "Nick Noble, Alex Handler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NickNobleWorks/Nothin/issues"
+  },
+  "homepage": "https://github.com/NickNobleWorks/Nothin"
+}
