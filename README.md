@@ -30,4 +30,4 @@ This is the first time setup:
 
 ## Credits
 
-Made with <3 by [@nickisnoble](http://twitter.com/nickisnoble) and [@alexhandler](http://twitter.com/alexhandler)
+Made with <3 by [@nickisnoble](http://twitter.com/nickisnoble) and [@alexjhandler](https://twitter.com/alexjhandler)
