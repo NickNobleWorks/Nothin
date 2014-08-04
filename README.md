@@ -19,6 +19,7 @@ This is the first time setup:
 3. navigate to the new folder: `$ cd Nothin`
 4. install dev dependencies: `$ npm install`  (requires [node.js]())
 5. install required gems: `$ gem install compass autoprefixer-rails modular-scale`
+6. compile styles: `$ compass compile`
 6. symlink to your local wordpress install: `$ ln -s ../Nothin ~/path/to/wp-content/themes/Nothin`
 
 ## Developement workflow
