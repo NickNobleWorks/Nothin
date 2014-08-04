@@ -1,10 +1,7 @@
 // This is the main file, that compiles down to style.css
 // Only do imports here, all styling should happen in a partial for easier organization
 
-
-
-=======
 @import "frontmatter";    // Wordpress theme info
 @import "compass/reset";  // CSS Resets
 @import "compass";        // Import compass mixins/utilities
->>>>>>> ee41940c5efc8c95c6d730705841ec1682531b69
+
