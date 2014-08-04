@@ -1,0 +1,27 @@
+{
+  "name": "Nothin",
+  "version": "0.0.0",
+  "description": "A WordPress Starter Theme, make somethin from Nothin!",
+  "main": "index.php",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NickNobleWorks/Nothin.git"
+  },
+  "keywords": [
+    "WordPress",
+    "boilerplate"
+  ],
+  "author": "Nick Noble, Alex Handler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NickNobleWorks/Nothin/issues"
+  },
+  "homepage": "https://github.com/NickNobleWorks/Nothin",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-compass": "~0.2.0",
+    "grunt-contrib-watch": "~0.4.3",
+    "matchdep": "~0.1.2",
+    "grunt-csscomb": "~3.0.0-1"
+  }
+}
