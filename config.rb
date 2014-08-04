@@ -4,8 +4,8 @@ require 'autoprefixer-rails'
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = ""
-sass_dir = "scss"
+css_dir = "/"
+sass_dir = "sass"
 images_dir = "imgs"
 javascripts_dir = "js"
 
