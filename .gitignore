@@ -2,3 +2,4 @@ node_modules
 *.log
 .sass-cache
 style.css
+.DS_Store
