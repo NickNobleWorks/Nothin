@@ -1,7 +1,10 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+// This is the main file, that compiles down to style.css
+// Only do imports here, all styling should happen in a partial for easier organization
 
-@import "compass";
 
+
+=======
+@import "frontmatter";    // Wordpress theme info
+@import "compass/reset";  // CSS Resets
+@import "compass";        // Import compass mixins/utilities
+>>>>>>> ee41940c5efc8c95c6d730705841ec1682531b69
