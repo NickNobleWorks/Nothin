@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-	<div> <!-- Main container -->
+	
 		
-		<div> <!-- content Container -->
+		<article>
 			
 			<?php if (have_posts()) : ?>
 			<?php while (have_posts()) : the_post(); ?>
@@ -15,8 +15,8 @@
 			<?php endwhile; ?>
 
 			<?php endif; ?>
-		</div>
+	
+		</article>
 
-	</div>
 
 	<?php get_footer(); ?>
