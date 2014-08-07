@@ -1,0 +1,19 @@
+/* 
+ *  Global Styles
+ *  =============
+ *
+ *  All the things that apply to all the things
+ *
+ */
+
+*{
+  &,
+  &:before, 
+  &:after{
+    box-sizing: border-box;
+  }
+}
+
+::selection{
+  color: $highlight;
+}

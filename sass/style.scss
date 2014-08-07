@@ -2,5 +2,35 @@
 // Only do imports here, all styling should happen in a partial for easier organization
 
 @import "frontmatter";    // Wordpress theme info
+
+
+/*************************************************************
+ *
+ *  The essentials
+ *
+ *************************************************************/
+
 @import "compass/reset";  // CSS Resets
 @import "compass";        // Import compass mixins/utilities
+@import "settings";       // Import vars, mixins, functions, etc.
+@import "global";         // Global styles
+
+/*************************************************************
+ *
+ *  Started from the bottom (now we're cascading)
+ *
+ *************************************************************/
+
+ @import "type";          // Type setting, vertical rhythm, baseline
+ @import "layout";        // Basic overarching layouts
+
+/*************************************************************
+ *
+ *  Yo doge I heard you like objects
+ *
+ *************************************************************/
+
+ @import "nav";           // Nav object
+ @import "media";         // Media object
+
+ // Add your bits here!
