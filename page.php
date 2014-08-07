@@ -1,22 +1,17 @@
-<?php get_header(); ?>
+<?php get_header(); // Load header.php ?>
 
+<article>
 	
-		
-		<article>
-			
-			<?php if (have_posts()) : ?>
-			<?php while (have_posts()) : the_post(); ?>
+	<?php if (have_posts()) : // Check for posts ?>
+		<?php while (have_posts()) : the_post(); // If there are posts, do each like this: ?>
 
+			<h2><?php the_title();?></h2>
 			
-				<h2><?php the_title();?></h2>
-				<?php the_content(); ?>
-			
-			
-			<?php endwhile; ?>
-
-			<?php endif; ?>
+			<?php the_content(); // Get the post body ?>
 	
-		</article>
+		<?php endwhile; ?>
+	<?php endif; ?>
 
+</article>
 
-	<?php get_footer(); ?>
+<?php get_footer(); // Load footer.php ?>

@@ -1,49 +1,30 @@
-
-<?php get_header(); ?>
-
-
-
-	
-	
-
-
+<?php get_header(); // Load header.php ?>
 		
-		<?php if (have_posts()) : ?>
-		<?php while (have_posts()) : the_post(); ?>
+<?php if (have_posts()) : // Check for posts ?>
+	<?php while (have_posts()) : the_post(); // If there are posts, do each like this: ?>
 
-		
 		<article>
-			
 		
-			
 			<h2><a href="<?php the_permalink() ?>"><?php the_title();?></a></h2>
 
-			<!--If the post has a thumbnail: -->
-			<?php if (has_post_thumbnail( $post_id )) : ?>
-			
-				<a href="<?php the_permalink();?>"><?php the_post_thumbnail( $size, $attr );?></a>
+			<?php if (has_post_thumbnail( $post_id )) : // If the post has a thumbnail, show it: ?>
+				<a href="<?php the_permalink();?>"><?php the_post_thumbnail();?></a>
 			<?php endif; ?>
 
-			<?php the_content(''); ?>
+			<?php the_content(); // Get the post body ?>
 
 			<ul> <!-- Meta Content for post, add and remove as needed -->
-				<li><?php the_time('F jS, Y'); ?></li>
-				<li><?php the_category('');?></li>
-				<li><?php comments_number( $zero, $one, $more, $deprecated );?></li>
+				<li><?php the_time('F jS, Y'); // Show the date posted ?></li>
+				<li><?php the_category(''); // Lists the categories?></li>
+				<li><?php comments_number( $zero, $one, $more, $deprecated ); // Let's us know if there's comments / how many exist ?></li>
 			</ul>
 
 		</article>
-			
-		
 
+	<?php endwhile; // There are no more posts to list ?>
 
-		<?php endwhile; ?>
-		
-		<?php else : ?>
+<?php else : // If no posts show up, tell the user ?>
+	<h2>No posts found :(</h2>
+<?php endif; ?>
 
-			<h2>Oops, Nothing is here....</h2> <!-- Display message you want seen if no post exists...-->
-
-		<?php endif; ?>
-	
-
-	<?php get_footer(); ?>
+<?php get_footer(); // Load footer.php ?>
