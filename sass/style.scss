@@ -3,7 +3,6 @@
 
 @import "frontmatter";    // Wordpress theme info
 
-
 /*************************************************************
  *
  *  The essentials
@@ -17,12 +16,12 @@
 
 /*************************************************************
  *
- *  Started from the bottom (now we're cascading)
+ *  Started from the bottom (now we're cascading here)
  *
  *************************************************************/
 
- @import "type";          // Type setting, vertical rhythm, baseline
- @import "layout";        // Basic overarching layouts
+@import "type";          // Type setting, vertical rhythm, baseline
+@import "layout";        // Basic overarching layouts
 
 /*************************************************************
  *
@@ -30,7 +29,7 @@
  *
  *************************************************************/
 
- @import "nav";           // Nav object
- @import "media";         // Media object
+@import "nav";           // Nav object
+@import "media";         // Media object
 
- // Add your bits here!
+// Add your bits here!
