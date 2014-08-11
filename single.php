@@ -7,12 +7,12 @@
 	
 			<h2><?php the_title();?></h2>
 
-			<?php if (has_post_thumbnail( $post_id )) : // If the post has a thumbnail, show it: ?>
+			<?php if (has_post_thumbnail()) : // If the post has a thumbnail, show it: ?>
 				<a href="<?php the_permalink();?>"><?php the_post_thumbnail();?></a>
 			<?php endif; ?>
 
 			<?php the_content(); // Get the post body ?>
-			
+
 		</article>
 
 	<?php endwhile; ?>
