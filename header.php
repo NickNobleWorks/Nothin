@@ -18,7 +18,7 @@
 	
 	<header>
 
-		<h1><a href="<?php the_permalink();?>"><?php bloginfo('name');?></a></h1>
+		<h1><a href="<?php bloginfo('url');?>"><?php bloginfo('name');?></a></h1>
 
 		<nav>
 			<?php wp_nav_menu(array('menu' => 'primary_menu')); ?>
