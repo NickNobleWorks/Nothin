@@ -8,7 +8,7 @@
 			<h2><?php the_title();?></h2>
 
 			<?php if (has_post_thumbnail()) : // If the post has a thumbnail, show it: ?>
-				<a href="<?php the_permalink();?>"><?php the_post_thumbnail();?></a>
+				<?php the_post_thumbnail();?>
 			<?php endif; ?>
 
 			<?php the_content(); // Get the post body ?>
