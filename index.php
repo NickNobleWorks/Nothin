@@ -7,7 +7,7 @@
 				
 					<h2><a href="<?php the_permalink() ?>"><?php the_title();?></a></h2>
 
-					<?php if (has_post_thumbnail( $post_id )) : // If the post has a thumbnail, show it: ?>
+					<?php if (has_post_thumbnail()) : // If the post has a thumbnail, show it: ?>
 						<a href="<?php the_permalink();?>"><?php the_post_thumbnail();?></a>
 					<?php endif; ?>
 
@@ -16,7 +16,7 @@
 					<ul> <!-- Meta Content for post, add and remove as needed -->
 						<li><?php the_time('F jS, Y'); // Show the date posted ?></li>
 						<li><?php the_category(''); // Lists the categories?></li>
-						<li><?php comments_number( $zero, $one, $more, $deprecated ); // Let's us know if there's comments / how many exist ?></li>
+						<li><?php comments_number(); // Let's us know if there's comments / how many exist ?></li>
 					</ul>
 
 				</article>
