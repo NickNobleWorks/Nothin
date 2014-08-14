@@ -8,8 +8,6 @@ A bare bones WordPress boilerplate. Takes care of the setup, so you can jump rig
 
 > Make somethin' from Nothin'
 
-## Goals
-
 ## Getting Started
 
 This is the first time setup:
